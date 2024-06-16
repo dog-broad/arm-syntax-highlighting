@@ -9,7 +9,7 @@
     "url": "https://github.com/dog-broad/arm-syntax-highlighting.gitt"
   },
   "engines": {
-    "vscode": "^1.90.0"
+    "vscode": "^1.60.0"
   },
   "activationEvents": [],
   "main": "./dist/extension.js",
