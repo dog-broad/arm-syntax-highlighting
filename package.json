@@ -4,6 +4,10 @@
   "description": "This Visual Studio Code extension provides syntax highlighting for ARM Assembly language, based on the original Notepad++ ARM Language Highlighting by BluRose.",
   "version": "0.0.1",
   "publisher": "Dog-broad",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dog-broad/arm-syntax-highlighting.gitt"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },
