@@ -1,0 +1,47 @@
+{
+    "scopeName": "source.arm-asm",
+    "patterns": [
+      {
+        "include": "#comments"
+      },
+      {
+        "include": "#instructions"
+      },
+      {
+        "include": "#registers"
+      }
+    ],
+    "repository": {
+      "comments": {
+        "patterns": [
+          {
+            "name": "comment.line.double-slash.arm",
+            "begin": "//",
+            "end": "$"
+          },
+          {
+            "name": "comment.block.arm",
+            "begin": "/\\*",
+            "end": "\\*/"
+          }
+        ]
+      },
+      "instructions": {
+        "patterns": [
+          {
+            "name": "keyword.other.arm",
+            "match": "\\b(adc|add|adr|adrl|and|asr|b|bfc|bfi|bic|bkpt|bl|blx|bx|bxj|cbz|cbnz|cdp|cdp2|clrex|clz|cmn|cmp|cps|cpy|dbg|dmb|dsb|eor|eret|isb|it|ldc|ldc2|ldm|ldr|ldrb|ldrbt|ldrd|ldrex|ldrexb|ldrexh|ldrex|ldrsh|ldrht|ldrsb|ldrsbt|ldrsh|ldrsht|ldrt|lsl|lsr|mla|mls|mov|movt|movw|mrc|mrs|mul|mvn|neg|nop|orn|orr|pld|pli|pop|push|qadd|qsub|rbit|rev|rev16|revsh|rfe|ror|rrx|rsb|sadd8|sasx|sbc|sbfx|sdiv|sel|setend|sev|shadd8|shasx|shsub8|smlal|smlsld|smul|smull|smulh|ssat|ssax|str|strb|strbt|strd|strex|strexb|strexh|strht|strt|sub|sxtab|sxth|tbb|tbh|teq|tst|uadd8|uhasx|uhsub8|uxtab|uxth|wfe|wfi|yield|ldmfd|stmfd|str|ldr|bl|pushne|beq|blt|moveq|movne|movlt|movge|movgt|movle|orr|ldrgtb|strgtb|subgt|bgt|bge|ble|bne|bpl|bmi|rsbeq|movs|subhs)\\b"
+          }
+        ]
+      },
+      "registers": {
+        "patterns": [
+          {
+            "name": "keyword.other.arm",
+            "match": "\\b(r0|r1|r2|r3|r4|r5|r6|r7|r8|r9|r10|r11|r12|r13|r14|r15|sp|fp|x0|x1|x2|x3|x4|x5|x6|x7|x8|x9|x10|x11|x12|x13|x14|x15|x16|x17|x18|x19|x20|x21|x22|x23|x24|x25|x26|x27|x28|x29|x30|x31|w0|w1|w2|w3|w4|w5|w6|w7|w8|w9|w10|w11|w12|w13|w14|w15|w16|w17|w18|w19|w20|w21|w22|w23|w24|w25|w26|w27|w28|w29|w30|w31|lr|pc|ip|sp|fp|sl|sb|tr|a1|a2|a3|a4|v1|v2|v3|v4|v5|v6|v7|v8)\\b"
+          }
+        ]
+      }
+    }
+  }
+  

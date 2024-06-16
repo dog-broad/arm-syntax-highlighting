@@ -1,0 +1,46 @@
+{
+    "name": "ARM ASM Dark",
+    "type": "dark",
+    "colors": {
+      "editor.foreground": "#FFFFFF",
+      "editor.background": "#000000",
+      "editorCursor.foreground": "#FFFFFF",
+      "editor.lineHighlightBackground": "#1E1E1E",
+      "editorLineNumber.foreground": "#2B91AF",
+      "editor.selectionBackground": "#264F78",
+      "editor.inactiveSelectionBackground": "#3A3D41"
+    },
+    "tokenColors": [
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#B4B4B4"
+        }
+      },
+      {
+        "scope": "constant.numeric",
+        "settings": {
+          "foreground": "#FF8000"
+        }
+      },
+      {
+        "scope": "keyword.other.arm",
+        "settings": {
+          "foreground": "#00B000"
+        }
+      },
+      {
+        "scope": "keyword.control.arm",
+        "settings": {
+          "foreground": "#B50B0B"
+        }
+      },
+      {
+        "scope": "keyword.operator.arm",
+        "settings": {
+          "foreground": "#0000FF"
+        }
+      }
+    ]
+  }
+  

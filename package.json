@@ -3,19 +3,36 @@
   "displayName": "ARM Syntax Highlighting",
   "description": "This Visual Studio Code extension provides syntax highlighting for ARM Assembly language, based on the original Notepad++ ARM Language Highlighting by BluRose.",
   "version": "0.0.1",
+  "publisher": "Dog-broad",
   "engines": {
     "vscode": "^1.90.0"
   },
-  "categories": [
-    "Other"
-  ],
   "activationEvents": [],
   "main": "./dist/extension.js",
+  "categories": [
+    "Programming Languages"
+  ],
   "contributes": {
-    "commands": [
+    "grammars": [
       {
-        "command": "arm-syntax-highlighting.helloWorld",
-        "title": "Hello World"
+        "language": "arm-asm",
+        "scopeName": "source.arm-asm",
+        "path": "./syntaxes/arm-asm.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "arm-asm",
+        "aliases": ["ARM ASM", "arm-asm"],
+        "extensions": [".S", ".s"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "ARM ASM Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/arm-asm-dark-color-theme.json"
       }
     ]
   },
